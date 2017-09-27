@@ -96,14 +96,14 @@
 
 <meta name="description" content="This is a brief introduction about how to plot grouping data with bokeh.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Plot grouping data with bokeh">
+<meta property="og:title" content="lot grouping data with bokeh">
 <meta property="og:url" content="http://yoursite.com/2017/09/27/Plot+grouping+data+with+bokeh/index.html">
 <meta property="og:site_name" content="Moon River">
 <meta property="og:description" content="This is a brief introduction about how to plot grouping data with bokeh.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-27T06:29:05.000Z">
+<meta property="og:updated_time" content="2017-09-27T06:31:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Plot grouping data with bokeh">
+<meta name="twitter:title" content="lot grouping data with bokeh">
 <meta name="twitter:description" content="This is a brief introduction about how to plot grouping data with bokeh.">
 
 
@@ -139,7 +139,7 @@
 
 
 
-  <title>Plot grouping data with bokeh | Moon River</title>
+  <title>lot grouping data with bokeh | Moon River</title>
   
 
 
@@ -269,7 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Plot grouping data with bokeh</h1>
+          <h1 class="post-title" itemprop="name headline">lot grouping data with bokeh</h1>
         
 
         <div class="post-meta">
@@ -325,7 +325,7 @@
 <p>2.Read csv</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">df = pd.read_csv(<span class="string">'grouping.csv'</span>)</div></pre></td></tr></table></figure>
 <p>3.Group the data</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">##This is a space after y in 'country',so 'country' can not found, we have to use 'country '</span></div><div class="line">group = df.groupby([<span class="string">'country '</span>])</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">##There is a space after y in 'country',so 'country' can not found, we have to use 'country '</span></div><div class="line">group = df.groupby([<span class="string">'country '</span>])</div></pre></td></tr></table></figure>
 <p>4.Specify the statistics you want to plot </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">stats = group.sum()</div></pre></td></tr></table></figure>
 <p>5.Specify the x range as factor<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">p = figure(x_range=FactorRange(*group.groups.keys()), y_range=(<span class="number">0</span>,<span class="number">15</span>))</div></pre></td></tr></table></figure></p>
