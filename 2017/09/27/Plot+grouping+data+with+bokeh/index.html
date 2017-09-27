@@ -96,14 +96,14 @@
 
 <meta name="description" content="This is a brief introduction about how to plot grouping data with bokeh.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="lot grouping data with bokeh">
+<meta property="og:title" content="Plot grouping data with bokeh">
 <meta property="og:url" content="http://yoursite.com/2017/09/27/Plot+grouping+data+with+bokeh/index.html">
 <meta property="og:site_name" content="Moon River">
 <meta property="og:description" content="This is a brief introduction about how to plot grouping data with bokeh.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-27T06:31:21.000Z">
+<meta property="og:updated_time" content="2017-09-27T06:33:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lot grouping data with bokeh">
+<meta name="twitter:title" content="Plot grouping data with bokeh">
 <meta name="twitter:description" content="This is a brief introduction about how to plot grouping data with bokeh.">
 
 
@@ -139,7 +139,7 @@
 
 
 
-  <title>lot grouping data with bokeh | Moon River</title>
+  <title>Plot grouping data with bokeh | Moon River</title>
   
 
 
@@ -269,7 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">lot grouping data with bokeh</h1>
+          <h1 class="post-title" itemprop="name headline">Plot grouping data with bokeh</h1>
         
 
         <div class="post-meta">
@@ -329,7 +329,11 @@
 <p>4.Specify the statistics you want to plot </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">stats = group.sum()</div></pre></td></tr></table></figure>
 <p>5.Specify the x range as factor<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">p = figure(x_range=FactorRange(*group.groups.keys()), y_range=(<span class="number">0</span>,<span class="number">15</span>))</div></pre></td></tr></table></figure></p>
-<p>6.Plot barchart with grouping data<br>stats.index is Index([‘China’, ‘UK’, ‘US’], dtype=’object’, name=’country ‘)<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">p.vbar(x=stats.index, top=stats.height, width=<span class="number">1</span>, line_color=<span class="string">"white"</span>)</div></pre></td></tr></table></figure></p>
+<p>6.Plot barchart with grouping data</p>
+<blockquote>
+<p>Note:stats.index is Index([‘China’, ‘UK’, ‘US’], dtype=’object’, name=’country ‘)</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">p.vbar(x=stats.index, top=stats.height, width=<span class="number">1</span>, line_color=<span class="string">"white"</span>)</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">output_notebook()</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">show(p)</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
