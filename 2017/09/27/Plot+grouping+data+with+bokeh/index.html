@@ -102,7 +102,7 @@
 <meta property="og:description" content="This is a brief introduction about how to plot grouping data with bokeh.">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/bokeh_plot.png">
-<meta property="og:updated_time" content="2017-09-27T08:59:58.000Z">
+<meta property="og:updated_time" content="2017-09-27T09:08:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Plot grouping data with bokeh">
 <meta name="twitter:description" content="This is a brief introduction about how to plot grouping data with bokeh.">
@@ -322,13 +322,9 @@
 
       
         <p>This is a brief introduction about how to plot grouping data with bokeh.<br><a id="more"></a></p>
-<ol>
-<li>The requirements<br>&ensp; a. To read csv data, import pandas<br>&ensp; b. To plot with bokeh, import figure, output_notebook, show from bokeh.plotting<br>&ensp; c. To deal grouping data, import ColumnDataSource, FactorRange from bokeh.models</li>
-</ol>
+<p>1    The requirements<br>&ensp; a. To read csv data, import pandas<br>&ensp; b. To plot with bokeh, import figure, output_notebook, show from bokeh.plotting<br>&ensp; c. To deal grouping data, import ColumnDataSource, FactorRange from bokeh.models</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</div><div class="line"><span class="keyword">from</span> bokeh.plotting <span class="keyword">import</span> figure, output_notebook, show</div><div class="line"><span class="keyword">from</span> bokeh.models <span class="keyword">import</span> ColumnDataSource, ranges,FactorRange</div></pre></td></tr></table></figure>
-<ol>
-<li>Read csv</li>
-</ol>
+<p>2    Read csv</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">df = pd.read_csv(<span class="string">'grouping.csv'</span>)</div></pre></td></tr></table></figure>
 <ol>
 <li>Group the data</li>
