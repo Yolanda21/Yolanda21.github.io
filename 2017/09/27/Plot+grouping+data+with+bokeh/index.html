@@ -102,7 +102,7 @@
 <meta property="og:description" content="This is a brief introduction about how to plot grouping data with bokeh.">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/bokeh_plot.png">
-<meta property="og:updated_time" content="2017-09-27T08:56:50.000Z">
+<meta property="og:updated_time" content="2017-09-27T08:59:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Plot grouping data with bokeh">
 <meta name="twitter:description" content="This is a brief introduction about how to plot grouping data with bokeh.">
@@ -322,16 +322,29 @@
 
       
         <p>This is a brief introduction about how to plot grouping data with bokeh.<br><a id="more"></a></p>
-<p>1.The requirements<br>&ensp; a. To read csv data, import pandas<br>&ensp; b. To plot with bokeh, import figure, output_notebook, show from bokeh.plotting<br>&ensp; c. To deal grouping data, import ColumnDataSource, FactorRange from bokeh.models</p>
+<ol>
+<li>The requirements<br>&ensp; a. To read csv data, import pandas<br>&ensp; b. To plot with bokeh, import figure, output_notebook, show from bokeh.plotting<br>&ensp; c. To deal grouping data, import ColumnDataSource, FactorRange from bokeh.models</li>
+</ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</div><div class="line"><span class="keyword">from</span> bokeh.plotting <span class="keyword">import</span> figure, output_notebook, show</div><div class="line"><span class="keyword">from</span> bokeh.models <span class="keyword">import</span> ColumnDataSource, ranges,FactorRange</div></pre></td></tr></table></figure>
-<p>2.Read csv</p>
+<ol>
+<li>Read csv</li>
+</ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">df = pd.read_csv(<span class="string">'grouping.csv'</span>)</div></pre></td></tr></table></figure>
-<p>3.Group the data</p>
+<ol>
+<li>Group the data</li>
+</ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">##There is a space after y in 'country',so 'country' can not found, we have to use 'country '</span></div><div class="line">group = df.groupby([<span class="string">'country '</span>])</div></pre></td></tr></table></figure>
-<p>4.Specify the statistics you want to plot </p>
+<ol>
+<li>Specify the statistics you want to plot </li>
+</ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">stats = group.sum()</div></pre></td></tr></table></figure>
-<p>5.Specify the x range as factor<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">p = figure(x_range=FactorRange(*group.groups.keys()), y_range=(<span class="number">0</span>,<span class="number">15</span>))</div></pre></td></tr></table></figure></p>
-<p>6.Plot barchart with grouping data</p>
+<ol>
+<li>Specify the x range as factor</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">p = figure(x_range=FactorRange(*group.groups.keys()), y_range=(<span class="number">0</span>,<span class="number">15</span>))</div></pre></td></tr></table></figure>
+<ol>
+<li>Plot barchart with grouping data</li>
+</ol>
 <blockquote>
 <p>Note:stats.index is Index([‘China’, ‘UK’, ‘US’], dtype=’object’, name=’country ‘)</p>
 </blockquote>
