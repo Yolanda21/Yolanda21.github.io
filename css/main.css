@@ -1807,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2f1bf4;
+  background: #01003c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2593,7 +2593,7 @@ hr {
   margin-top: 80px;
 }
 .header {
-  background: #81d8d0;
+  background: #999;
 }
 .header-inner {
   padding: 25px 0 20px;
@@ -2886,4 +2886,12 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+#sidebar {
+  background: $black;
+}
+#sidebar p,
+#sidebar span,
+#sidebar a {
+  color: #81d8d0;
 }
