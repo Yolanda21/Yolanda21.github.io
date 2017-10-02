@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Xgboost,Ml,R," />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="There is an error in creating Xgb.DMatrix in R. [15:29:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo “00016671” Error: No such file or directory. To solve this">
-<meta name="keywords" content="Xgboost,Ml,R">
+<meta name="description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through    doc   .The first unassigned string in a module, class declaration, or function declaration can be access">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Xgboost little bug(R)">
-<meta property="og:url" content="http://yoursite.com/2017/10/01/xgboost-BUG/index.html">
+<meta property="og:title" content="Python Basic">
+<meta property="og:url" content="http://yoursite.com/2017/10/02/Basic/index.html">
 <meta property="og:site_name" content="MOON RIVER">
-<meta property="og:description" content="There is an error in creating Xgb.DMatrix in R. [15:29:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo “00016671” Error: No such file or directory. To solve this">
+<meta property="og:description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through    doc   .The first unassigned string in a module, class declaration, or function declaration can be access">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-10-01T13:45:45.000Z">
+<meta property="og:updated_time" content="2017-10-02T12:06:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xgboost little bug(R)">
-<meta name="twitter:description" content="There is an error in creating Xgb.DMatrix in R. [15:29:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo “00016671” Error: No such file or directory. To solve this">
+<meta name="twitter:title" content="Python Basic">
+<meta name="twitter:description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through    doc   .The first unassigned string in a module, class declaration, or function declaration can be access">
 
 
 
@@ -134,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/10/01/xgboost-BUG/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/02/Basic/"/>
 
 
 
 
 
-  <title>Xgboost little bug(R) | MOON RIVER</title>
+  <title>Python Basic | MOON RIVER</title>
   
 
 
@@ -273,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/01/xgboost-BUG/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/02/Basic/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yun Sun">
@@ -290,7 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Xgboost little bug(R)</h1>
+          <h1 class="post-title" itemprop="name headline">Python Basic</h1>
         
 
         <div class="post-meta">
@@ -302,8 +302,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-01T21:39:53+08:00">
-                2017-10-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-02T20:06:10+08:00">
+                2017-10-02
               </time>
             
 
@@ -325,8 +325,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Ml/" itemprop="url" rel="index">
-                    <span itemprop="name">Ml</span>
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
                   </a>
                 </span>
 
@@ -362,10 +362,66 @@
       
 
       
-        <p>There is an error in creating Xgb.DMatrix in R.</p>
-<p>[15:29:22] amalgamation/../dmlc-core/src/io/local_filesys.cc:66: LocalFileSystem.GetPathInfo “00016671” Error: No such file or directory.</p>
-<p>To solve this problem, change all categorical data to numeric one.</p>
-<p>Xgboost won’t work with categorical data.</p>
+        <h2 id="Basic-Style-Guidelines"><a href="#Basic-Style-Guidelines" class="headerlink" title="Basic Style Guidelines"></a>Basic Style Guidelines</h2><h3 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a>Documentation</h3><p>Python provide a mechanism whereby documentation  through <font color="#81D8D0">  <em><strong> doc </strong> </em></font> .The first unassigned string in a module, class declaration, or function declaration can be accessed using the attribute <font color="#81D8D0"><em>obj. <strong> doc </strong> </em></font> where<font color="#81D8D0"> <em>obj</em> </font>is the module, class, or function name.</p>
+<p> For example:</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"> </div></pre></td></tr></table></figure>
+<p> return:</p>
+<blockquote>
+<p>“Return the sum of a ‘start’ value (default: 0) plus an iterable of numbers.<br>When the iterable is empty, return the start value.<br>This function is intended specifically for use with numeric values and may reject non-numeric types.”</p>
+</blockquote>
+<p>Note: There are two underscores before<font color="#81D8D0"> <em>doc</em> </font>and after <font color="#81D8D0"> <em>doc</em> </font> respectively.</p>
+<h3 id="Module-Structure-and-Layout"><a href="#Module-Structure-and-Layout" class="headerlink" title="Module Structure and Layout"></a>Module Structure and Layout</h3><p>Modules are simply physical ways of logically organizing all your Python code. Within each file, you should set up a consistent and easy-to-read structure. One such layout is the following:</p>
+<blockquote>
+<p># (1) startup line (Unix only)<br># (2) module documentation<br># (3) module imports<br># (4) variable declarations<br># (5) class declarations<br># (6) function declarations<br># (7) “main” body</p>
+</blockquote>
+<p># Module documentation</p>
+<p>Summary of a module’s functionality and significant global variables; accessible<br>externally as <font color="#81D8D0"><em>module. <strong> doc</strong></em></font>.</p>
+<p>###Core tips  </p>
+<ol>
+<li><p>Use local variables to substitute for module attributes.</p>
+<blockquote>
+<p>This is one of the tricks in making your programs faster: replace often-used (and name-lengthy) module attributes with local references. Your code runs faster and has less clutter with a shorter name. This is because lookups are much faster for local variables and local variables are always searched first before globals.</p>
+</blockquote>
+</li>
+<li><p>Intent with 4 spaces and avoid using tabs.</p>
+</li>
+<li><p>Avoid using underscores to begin variable names.</p>
+</li>
+</ol>
+<h2 id="Python-Objects"><a href="#Python-Objects" class="headerlink" title="Python Objects"></a>Python Objects</h2><h3 id="Objects"><a href="#Objects" class="headerlink" title="Objects"></a>Objects</h3><p>All Python objects have the following three characteristics: an  identity, a type and a value.</p>
+<p>IDENTITY</p>
+<blockquote>
+<p>Unique identifier that differentiates an object from all others.  This value is as close as you will get to a “memory address” in Python.</p>
+</blockquote>
+<p>TYPE</p>
+<blockquote>
+<p>An object’s type indicates that what kind of values an object can hold, what operations can be applied to such objects, and what behavioral rules these objects are subject to. You can use <font color="#81D8D0"><em>type()</em> </font> to reveal the type of a python object.</p>
+</blockquote>
+<p>VALUE</p>
+<blockquote>
+<p>Data item that is represented by an object.</p>
+</blockquote>
+<h3 id="Standard-Type-Built-in-Functions"><a href="#Standard-Type-Built-in-Functions" class="headerlink" title="Standard Type Built-in Functions"></a>Standard Type Built-in Functions</h3><p>####<font color="#81D8D0"> type()</font> and  <font color="#81D8D0)"> instance()</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">type(3)</div></pre></td></tr></table></figure>
+<p>Output:</p>
+<blockquote>
+<p>int</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">isinstance(3,int)</div></pre></td></tr></table></figure>
+<p>Output：</p>
+<blockquote>
+<p>True</p>
+</blockquote>
+<p>Also, you can check if a object belongs to any of the many types:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">isinstance(3,(int,float,complex))</div></pre></td></tr></table></figure></p>
+<p>Output:</p>
+<blockquote>
+<p>True</p>
+</blockquote>
+<font color="#81D8D0"><em>Note</em>:<br>Python3 does not have <em>Long integer</em> data type.</font>
+
+<h3 id="Type-Factory-Functions"><a href="#Type-Factory-Functions" class="headerlink" title="Type Factory Functions"></a>Type Factory Functions</h3><p>Built-in functions like <font color="#81D8D0"><em>int()</em></font>, <font color="#81D8D0"><em>type()</em></font>,<font color="#81D8D0"><em>list()</em></font>,etc. are factory functions. This means that although they look and act somewhat like functions, they are actually class names, and when you call one, you are actually instantiating an instance of that type, like a factory producing a good.</p>
+<p>Book Recommendation：<em>Core Python programming</em></p>
+<p>This book is easy for new learners and introduces a lot about coding style.</p>
 
       
     </div>
@@ -383,11 +439,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Xgboost/" rel="tag"># Xgboost</a>
-          
-            <a href="/tags/Ml/" rel="tag"># Ml</a>
-          
-            <a href="/tags/R/" rel="tag"># R</a>
+            <a href="/tags/Python/" rel="tag"># Python</a>
           
         </div>
       
@@ -400,8 +452,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/28/special_characters_to_aviod_in_filenames/" rel="next" title="Special Characters to Avoid in File Names and Password">
-                <i class="fa fa-chevron-left"></i> Special Characters to Avoid in File Names and Password
+              <a href="/2017/10/01/xgboost-BUG/" rel="next" title="Xgboost little bug(R)">
+                <i class="fa fa-chevron-left"></i> Xgboost little bug(R)
               </a>
             
           </div>
@@ -409,10 +461,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/02/Basic/" rel="prev" title="Python Basic">
-                Python Basic <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -464,8 +512,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://b-ssl.duitang.com/uploads/item/201602/12/20160212225626_HfMu8.jpeg"
@@ -551,6 +608,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Style-Guidelines"><span class="nav-number">1.</span> <span class="nav-text">Basic Style Guidelines</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Documentation"><span class="nav-number">1.1.</span> <span class="nav-text">Documentation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Module-Structure-and-Layout"><span class="nav-number">1.2.</span> <span class="nav-text">Module Structure and Layout</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-Objects"><span class="nav-number">2.</span> <span class="nav-text">Python Objects</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Objects"><span class="nav-number">2.1.</span> <span class="nav-text">Objects</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Standard-Type-Built-in-Functions"><span class="nav-number">2.2.</span> <span class="nav-text">Standard Type Built-in Functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Type-Factory-Functions"><span class="nav-number">2.3.</span> <span class="nav-text">Type Factory Functions</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
