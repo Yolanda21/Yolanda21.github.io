@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="MOON RIVER">
 <meta property="og:description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through    doc   .The first unassigned string in a module, class declaration, or function declaration can be access">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-10-02T12:06:10.000Z">
+<meta property="og:updated_time" content="2017-10-02T12:09:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python Basic">
 <meta name="twitter:description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through    doc   .The first unassigned string in a module, class declaration, or function declaration can be access">
@@ -364,7 +364,7 @@
       
         <h2 id="Basic-Style-Guidelines"><a href="#Basic-Style-Guidelines" class="headerlink" title="Basic Style Guidelines"></a>Basic Style Guidelines</h2><h3 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a>Documentation</h3><p>Python provide a mechanism whereby documentation  through <font color="#81D8D0">  <em><strong> doc </strong> </em></font> .The first unassigned string in a module, class declaration, or function declaration can be accessed using the attribute <font color="#81D8D0"><em>obj. <strong> doc </strong> </em></font> where<font color="#81D8D0"> <em>obj</em> </font>is the module, class, or function name.</p>
 <p> For example:</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"> </div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sum.__doc__</div></pre></td></tr></table></figure>
 <p> return:</p>
 <blockquote>
 <p>“Return the sum of a ‘start’ value (default: 0) plus an iterable of numbers.<br>When the iterable is empty, return the start value.<br>This function is intended specifically for use with numeric values and may reject non-numeric types.”</p>
@@ -376,8 +376,7 @@
 </blockquote>
 <p># Module documentation</p>
 <p>Summary of a module’s functionality and significant global variables; accessible<br>externally as <font color="#81D8D0"><em>module. <strong> doc</strong></em></font>.</p>
-<p>###Core tips  </p>
-<ol>
+<h3 id="Core-tips"><a href="#Core-tips" class="headerlink" title="Core tips"></a>Core tips</h3><ol>
 <li><p>Use local variables to substitute for module attributes.</p>
 <blockquote>
 <p>This is one of the tricks in making your programs faster: replace often-used (and name-lengthy) module attributes with local references. Your code runs faster and has less clutter with a shorter name. This is because lookups are much faster for local variables and local variables are always searched first before globals.</p>
@@ -401,7 +400,8 @@
 <blockquote>
 <p>Data item that is represented by an object.</p>
 </blockquote>
-<h3 id="Standard-Type-Built-in-Functions"><a href="#Standard-Type-Built-in-Functions" class="headerlink" title="Standard Type Built-in Functions"></a>Standard Type Built-in Functions</h3><p>####<font color="#81D8D0"> type()</font> and  <font color="#81D8D0)"> instance()</font></p>
+<h3 id="Standard-Type-Built-in-Functions"><a href="#Standard-Type-Built-in-Functions" class="headerlink" title="Standard Type Built-in Functions"></a>Standard Type Built-in Functions</h3><font color="#81D8D0"> type()</font> and  <font color="#81D8D0)"> instance()</font>
+
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">type(3)</div></pre></td></tr></table></figure>
 <p>Output:</p>
 <blockquote>
@@ -618,7 +618,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Style-Guidelines"><span class="nav-number">1.</span> <span class="nav-text">Basic Style Guidelines</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Documentation"><span class="nav-number">1.1.</span> <span class="nav-text">Documentation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Module-Structure-and-Layout"><span class="nav-number">1.2.</span> <span class="nav-text">Module Structure and Layout</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-Objects"><span class="nav-number">2.</span> <span class="nav-text">Python Objects</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Objects"><span class="nav-number">2.1.</span> <span class="nav-text">Objects</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Standard-Type-Built-in-Functions"><span class="nav-number">2.2.</span> <span class="nav-text">Standard Type Built-in Functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Type-Factory-Functions"><span class="nav-number">2.3.</span> <span class="nav-text">Type Factory Functions</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Style-Guidelines"><span class="nav-number">1.</span> <span class="nav-text">Basic Style Guidelines</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Documentation"><span class="nav-number">1.1.</span> <span class="nav-text">Documentation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Module-Structure-and-Layout"><span class="nav-number">1.2.</span> <span class="nav-text">Module Structure and Layout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Core-tips"><span class="nav-number">1.3.</span> <span class="nav-text">Core tips</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-Objects"><span class="nav-number">2.</span> <span class="nav-text">Python Objects</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Objects"><span class="nav-number">2.1.</span> <span class="nav-text">Objects</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Standard-Type-Built-in-Functions"><span class="nav-number">2.2.</span> <span class="nav-text">Standard Type Built-in Functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Type-Factory-Functions"><span class="nav-number">2.3.</span> <span class="nav-text">Type Factory Functions</span></a></li></ol></li></ol></div>
             
 
           </div>
