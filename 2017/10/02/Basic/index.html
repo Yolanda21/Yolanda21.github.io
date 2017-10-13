@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through    doc   .The first unassigned string in a module, class declaration, or function declaration can be access">
+<meta name="description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through   __doc__ .The first unassigned string in a module, class declaration, or function declaration can be acces">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python Basic">
 <meta property="og:url" content="http://yoursite.com/2017/10/02/Basic/index.html">
 <meta property="og:site_name" content="MOON RIVER">
-<meta property="og:description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through    doc   .The first unassigned string in a module, class declaration, or function declaration can be access">
+<meta property="og:description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through   __doc__ .The first unassigned string in a module, class declaration, or function declaration can be acces">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-10-02T12:09:42.000Z">
+<meta property="og:updated_time" content="2017-10-05T08:59:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python Basic">
-<meta name="twitter:description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through    doc   .The first unassigned string in a module, class declaration, or function declaration can be access">
+<meta name="twitter:description" content="Basic Style GuidelinesDocumentationPython provide a mechanism whereby documentation  through   __doc__ .The first unassigned string in a module, class declaration, or function declaration can be acces">
 
 
 
@@ -362,7 +362,7 @@
       
 
       
-        <h2 id="Basic-Style-Guidelines"><a href="#Basic-Style-Guidelines" class="headerlink" title="Basic Style Guidelines"></a>Basic Style Guidelines</h2><h3 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a>Documentation</h3><p>Python provide a mechanism whereby documentation  through <font color="#81D8D0">  <em><strong> doc </strong> </em></font> .The first unassigned string in a module, class declaration, or function declaration can be accessed using the attribute <font color="#81D8D0"><em>obj. <strong> doc </strong> </em></font> where<font color="#81D8D0"> <em>obj</em> </font>is the module, class, or function name.</p>
+        <h2 id="Basic-Style-Guidelines"><a href="#Basic-Style-Guidelines" class="headerlink" title="Basic Style Guidelines"></a>Basic Style Guidelines</h2><h3 id="Documentation"><a href="#Documentation" class="headerlink" title="Documentation"></a>Documentation</h3><p>Python provide a mechanism whereby documentation  through <font color="#81D8D0">  <em>__doc__</em></font> .The first unassigned string in a module, class declaration, or function declaration can be accessed using the attribute <font color="#81D8D0"><em>obj.__doc__ </em></font> where<font color="#81D8D0"> <em>obj</em> </font>is the module, class, or function name.</p>
 <p> For example:</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sum.__doc__</div></pre></td></tr></table></figure>
 <p> return:</p>
@@ -375,7 +375,7 @@
 <p># (1) startup line (Unix only)<br># (2) module documentation<br># (3) module imports<br># (4) variable declarations<br># (5) class declarations<br># (6) function declarations<br># (7) “main” body</p>
 </blockquote>
 <p># Module documentation</p>
-<p>Summary of a module’s functionality and significant global variables; accessible<br>externally as <font color="#81D8D0"><em>module. <strong> doc</strong></em></font>.</p>
+<p>Summary of a module’s functionality and significant global variables; accessible<br>externally as <font color="#81D8D0"><em>module.__ doc__</em></font>.</p>
 <h3 id="Core-tips"><a href="#Core-tips" class="headerlink" title="Core tips"></a>Core tips</h3><ol>
 <li><p>Use local variables to substitute for module attributes.</p>
 <blockquote>
@@ -420,7 +420,7 @@
 <font color="#81D8D0"><em>Note</em>:<br>Python3 does not have <em>Long integer</em> data type.</font>
 
 <h3 id="Type-Factory-Functions"><a href="#Type-Factory-Functions" class="headerlink" title="Type Factory Functions"></a>Type Factory Functions</h3><p>Built-in functions like <font color="#81D8D0"><em>int()</em></font>, <font color="#81D8D0"><em>type()</em></font>,<font color="#81D8D0"><em>list()</em></font>,etc. are factory functions. This means that although they look and act somewhat like functions, they are actually class names, and when you call one, you are actually instantiating an instance of that type, like a factory producing a good.</p>
-<p>Book Recommendation：<em>Core Python programming</em></p>
+<p>Book Recommendation：<em>Core Python Programming</em></p>
 <p>This book is easy for new learners and introduces a lot about coding style.</p>
 
       
@@ -461,6 +461,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/13/create_table_R/" rel="prev" title="Create Table with R">
+                Create Table with R <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -537,7 +541,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -548,7 +552,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
